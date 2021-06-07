@@ -1,8 +1,7 @@
 <?php
     include_once 'dbh.inc.php';
 
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
+$name = $_POST['name'];
 $value = $_POST['value'];
 $quantity = $_POST['quantity'];
 
@@ -15,7 +14,7 @@ $conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName);
 
 
 $sql = "INSERT INTO production (name, value, quantity) VALUES ('$name', '$value', '$quantity');";
-mysqli_query($conn, $sql)
+mysqli_query($conn, $sql);
 
 
 
