@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Fulfillment</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    
+    </head>
+
+    <body>
+
+        <h1>Fulfillment</h1>
+
+        
+        <form action="php/production-submit.php" method="POST">
+
+
+        <div id="datediv">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </div>    
+
+
+        <div id="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+
+        <div id="value">
+            <label for="value">Value</label>
+            <input type="text" id="value" name="value">
+        </div>
+
+
+        <div id="quantity">
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" name="quantity">
+        </div>
+
+
+       
+
+    </body>
+
+
+</html>
+
