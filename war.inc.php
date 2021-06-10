@@ -1,10 +1,10 @@
 <?php
- $conn = mysqli_connect("localhost", "root", "", "company");
+ $conn = mysqli_connect("107.180.28.163", "squn2limpy97", "Pr0d1gy", "production");
  // Check connection
  if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     }
- $sql = "SELECT Name, Value, Quantity FROM warehousedashboard";
+ $sql = "SELECT Name, Value, Quantity FROM production";
 
  $result = $conn->query($sql);
 

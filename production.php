@@ -10,15 +10,15 @@
         <link href="style.css" type="text/css" rel="stylesheet">
 
         <script>
-            function addList(){
-            var select = document.getElementById("name");
-            for(var i = 2011; i >= 1900; --i) {
-            var option = document.createElement('option');
-            option.text = option.value = i;
-            select.add(option, 0);
-              }
-             }
-            </script>
+            window.onload = function () {
+        var select = document.getElementById("year");
+        for(var i = 2011; i >= 1900; --i) {
+        var option = document.createElement('option');
+        option.text = option.value = i;
+        select.add(option, 0);
+                }
+            };
+        </script>
         
 
     </head>
@@ -34,7 +34,7 @@
     <div id="datediv">
         <label for="date">Date</label>
         <input type="date" id="date" name="date">
-    </div>    
+    </div>
     
     <div id="name">
         <label for="name">Name</label>
