@@ -4,7 +4,7 @@
  if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     }
- $sql = "SELECT Name, Value, Quantity FROM login";
+ $sql = "SELECT Name, Value, Quantity FROM warehousedashboard";
 
  $result = $conn->query($sql);
 

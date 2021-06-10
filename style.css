@@ -1,0 +1,25 @@
+body {
+    display: block;
+    background: navy;
+    color: white;
+    height: 1500px;    
+}
+
+div {
+    margin: 12px
+}
+
+img {
+    height: 140px;
+    width: 140px;
+}
+
+a {
+    color: lawngreen;
+    font-size: 30px;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
