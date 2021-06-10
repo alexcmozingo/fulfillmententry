@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 
 <html>
 
@@ -7,6 +8,18 @@
         <title>Daily Production Log</title>
 
         <link href="style.css" type="text/css" rel="stylesheet">
+
+        <script>
+            function addList(){
+            var select = document.getElementById("name");
+            for(var i = 2011; i >= 1900; --i) {
+            var option = document.createElement('option');
+            option.text = option.value = i;
+            select.add(option, 0);
+              }
+             }
+            </script>
+        
 
     </head>
 
@@ -24,11 +37,16 @@
     </div>    
     
     <div id="name">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname">
+        <label for="name">Name</label>
+        <select id="name" name="name">
+            <?php 
+            $sql = mysqli_query($connection, "SELECT name FROM production");
+            while ($row = $sql->fetch_assoc()){
+            echo "<option value=\"name1\">" . $row['Name'] . "</option>";
+            }
+            ?>
+            </select>
         
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname">
     </div>
     
     
